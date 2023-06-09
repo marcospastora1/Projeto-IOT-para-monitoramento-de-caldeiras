@@ -1,0 +1,47 @@
+{
+    "BROKER_URL": "localhost",
+    "BROKER_PORT": 1883,
+    "TOPICS": [
+        {
+            "TYPE": "multiple",
+            "PREFIX": "Caldeiras",
+            "RANGE_START": 0,
+            "RANGE_END": 3,
+            "TIME_INTERVAL": 5,
+            "DATA": [
+                {
+                    "NAME": "pressao",
+                    "TYPE": "int",
+                    "MIN_VALUE": 50,
+                    "MAX_VALUE": 100,
+                    "MAX_STEP": 2,
+                    "RETAIN_PROBABILITY": 0.25
+                },
+                {
+                    "NAME": "nivelAgua",
+                    "TYPE": "float",
+                    "MIN_VALUE": 1,
+                    "MAX_VALUE": 40,
+                    "MAX_STEP": 0.2,
+                    "RETAIN_PROBABILITY": 0.5
+                },
+                {
+                    "NAME": "nivelCombustivel",
+                    "TYPE": "float",
+                    "MIN_VALUE": 1,
+                    "MAX_VALUE": 40,
+                    "MAX_STEP": 0.2,
+                    "RETAIN_PROBABILITY": 0.5
+                },
+                {
+                    "NAME": "temperatura",
+                    "TYPE": "float",
+                    "MIN_VALUE": 34,
+                    "MAX_VALUE": 40,
+                    "MAX_STEP": 0.2,
+                    "RETAIN_PROBABILITY": 0.5
+                }
+            ]
+        }
+    ]
+}
