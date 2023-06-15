@@ -9,7 +9,7 @@ def on_connect(client, userdata, flags, rc):
 
     # Subscribing in on_connect() means that if we lose the connection and
     # reconnect then subscriptions will be renewed.
-    client.subscribe("Caldeiras/#")
+    client.subscribe("Caldeira/#")
 
 # Onde está sendo enviado os dados gerados pelos "Sensores" para API
 def on_message(client, userdata, msg):
