@@ -85,12 +85,12 @@ class TopicAuto(Topic, threading.Thread):
         payload = {}
         if self.old_payload == None:
             # generate initial data
-            payload['nome'] = self.topic_url.replace("/", "0")
+            payload['nomeCaldeira'] = self.topic_url.replace("/", "0")
             for data in self.topic_data:
                 payload[data['NAME']] = self.generate_initial_value(data)
         else:
             # generate next data
-            payload['nome'] = self.topic_url.replace("/", "0")
+            payload['nomeCaldeira'] = self.topic_url.replace("/", "0")
             for data in self.topic_data:
                 payload[data['NAME']] = self.generate_next_value(data, self.old_payload[data['NAME']])
         return payload
