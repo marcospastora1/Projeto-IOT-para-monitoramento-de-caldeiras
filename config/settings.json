@@ -13,7 +13,7 @@
                     "NAME": "pressao",
                     "TYPE": "int",
                     "MIN_VALUE": 300,
-                    "MAX_VALUE": 1000,
+                    "MAX_VALUE": 1200,
                     "MAX_STEP": 2,
                     "RETAIN_PROBABILITY": 0.25
                 },
@@ -36,8 +36,8 @@
                 {
                     "NAME": "temperatura",
                     "TYPE": "float",
-                    "MIN_VALUE": 50,
-                    "MAX_VALUE": 500,
+                    "MIN_VALUE": 40,
+                    "MAX_VALUE": 600,
                     "MAX_STEP": 1,
                     "RETAIN_PROBABILITY": 0.5
                 }
